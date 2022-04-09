@@ -1,4 +1,6 @@
-# R, Rstudioのインストール for macOS
+# R, RStudio, RStanのインストール for macOS
+
+このガイドは，2022年4月9日に作成されました．macOS 12.1 (Monterey) で確認しています．
 
 # Rのインストール
 
