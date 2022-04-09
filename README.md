@@ -21,23 +21,15 @@
 
 1. App StoreからXcodeをインストールする．
 2. まだコマンドライン・デベロッパツールをインストールしていない場合は，ターミナルを開き，以下のように入力してインストールする．
-```
-xcode-select --install
-```
+    xcode-select --install
 3. [gfortran for Monterey Intel](https://github.com/fxcoudert/gfortran-for-macOS/releases/download/11.2-monterey-intel/gfortran-Intel-11.2-Monterey.dmg)をダウンロードし、ディスクイメージ `gfortran-Intel-11.2-Monterey.dmg`を開く．パッケージ `gfortran.pkg` を開く。指示に従ってインストーラの操作を進める．「インストール」を押して管理者の名前とパスワードを聞かれた場合には入力する．
 3. RStudioを起動する．
 4. コンソールから以下のように入力する．
-   ```
-install.packages(c("remotes", "Rcpp", "RcppArmadillo")
-   ```
+    install.packages(c("remotes", "Rcpp", "RcppArmadillo")
 5. コンソールから以下のように入力する．
-```
-remotes::install_git("https://github.com/hsbadr/rstan", subdir = "StanHeaders", ref = "develop")
-```
+    remotes::install_git("https://github.com/hsbadr/rstan", subdir = "StanHeaders", ref = "develop")
 6. コンソールから以下のように入力する．
-```
-remotes::install_git("https://github.com/hsbadr/rstan", subdir = "rstan/rstan", ref = "develop")
-```
+    remotes::install_git("https://github.com/hsbadr/rstan", subdir = "rstan/rstan", ref = "develop")
 
 
 1. macos-rtools-4.0.0.pkgをダウンロードして開く。
