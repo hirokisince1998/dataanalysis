@@ -19,8 +19,6 @@
 
 # RStanのインストール
 
-    outside code block
-
 1. App StoreからXcodeをインストールする．
 2. まだコマンドライン・デベロッパツールをインストールしていない場合は，ターミナルを開き，以下のように入力してインストールする．
 
@@ -30,19 +28,18 @@
 3. RStudioを起動する．
 4. コンソールから以下のように入力する．
 
-        install.packages(c("remotes", "Rcpp", "RcppArmadillo")
+        install.packages(c("remotes", "Rcpp", "RcppArmadillo"))
 
 5. コンソールから以下のように入力する．
 
         remotes::install_git("https://github.com/hsbadr/rstan", subdir = "StanHeaders", ref = "develop")
+
+   「パッケージのソースからインストールを行いますか？」と聞かれた場合にはnoと入力する．
 
 6. コンソールから以下のように入力する．
 
         remotes::install_git("https://github.com/hsbadr/rstan", subdir = "rstan/rstan", ref = "develop")
 
 
-1. macos-rtools-4.0.0.pkgをダウンロードして開く。
-2. 「"macos-rtools-4.0.0.pkg"が悪質なソフトウェアかどうかをAppleでは確認できないため、このソフトウェアは開けません。」というダイアログが出たらOKを押して消し、macOSのシステム環境設定を開く。「セキュリティとプライバシー」を選ぶと、「ダウンロードしたアプリケーションの実行許可」の欄に「"macos-rtools-4.0.0.pkg"は開発元を確認できないため、使用がブロックされました。」と表示されているので、「このまま開く」を押す。管理者の名前とパスワードを聞かれた場合には入力する．先程と同じダイアログが出るが、今度は「開く」が選択できるので押す。さらに管理者の名前とパスワードを聞かれた場合には入力する．macOS R toolchainインストーラが起動するので、指示に従ってインストーラの操作を進める．「インストール」を押して管理者の名前とパスワードを聞かれた場合には入力する．
 
-
-https://discourse.mc-stan.org/t/big-sur-installation-instructions-for-r-need-an-update/24351/4
+これで RStan がインストールできたので、RStudio のコンソールから `library(rstan)` と入力して RStan を読み込めることを確認する．
