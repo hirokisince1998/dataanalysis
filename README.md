@@ -19,6 +19,8 @@
 
 # RStanのインストール
 
+    outside code block
+
 1. App StoreからXcodeをインストールする．
 2. まだコマンドライン・デベロッパツールをインストールしていない場合は，ターミナルを開き，以下のように入力してインストールする．
     xcode-select --install
