@@ -29,7 +29,7 @@ xcode-select --install
 4. コンソールから以下のように入力する．
    ```
 install.packages(c("remotes", "Rcpp", "RcppArmadillo")
-```
+   ```
 5. コンソールから以下のように入力する．
 ```
 remotes::install_git("https://github.com/hsbadr/rstan", subdir = "StanHeaders", ref = "develop")
